@@ -4,4 +4,3 @@
 # symbol | needed by
 SoundOGG::IsOGGPlaying(SoundOGG*) | shooter.so
 SoundOGG::RampOGGVolume(SoundOGG*, int, int, bool) | shooter.so
-SoundOGG::PlayOGG(char*, unsigned short, int) | shooter.so
