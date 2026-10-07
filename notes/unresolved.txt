@@ -2,28 +2,6 @@
 # megatouch-host loads the game with RTLD_NOW, so each of these must be defined
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
-FileExists(char const*) | libmerit3d.so
-ExtendedCrashInfo::ExtendedCrashInfo() | libmeritbasegame.so
-ExtendedCrashInfo::~ExtendedCrashInfo() | libmeritbasegame.so
-Merit3d::RenderToTexture::UpdateTexture(unsigned char*) | libmerit3d.so
-Merit3d::RenderToTexture::UpdateDeltaTextureFull(unsigned short*, unsigned char*, unsigned short) | libmerit3d.so
-Merit3d::RenderToTexture::UpdateDeltaTextureDirty(unsigned short*, unsigned short) | libmerit3d.so
-Merit3d::RenderToTexture::Create(unsigned int, unsigned int, unsigned int) | libmerit3d.so
-Merit3d::RenderToTexture::Destroy() | libmerit3d.so
-Merit3d::RenderToTexture::RenderToTexture() | libmerit3d.so
-Merit3d::RenderToTexture::~RenderToTexture() | libmerit3d.so
-Merit3d::VideoObjectData::FirstFrame() | libmerit3d.so
-Merit3d::VideoObjectData::isVideoLoaded() | libmerit3d.so
-Merit3d::VideoObjectData::Load(char const*, bool) | libmerit3d.so
-Merit3d::VideoObjectData::Play() | libmerit3d.so
-Merit3d::VideoObjectData::Stop() | libmerit3d.so
-Merit3d::VideoObjectData::Pause() | libmerit3d.so
-Merit3d::VideoObjectData::Update(float) | libmerit3d.so
-Merit3d::VideoObjectData::Restart(int) | libmerit3d.so
-Merit3d::VideoObjectData::Shutdown() | libmerit3d.so
-Merit3d::VideoObjectData::VideoObjectData() | libmerit3d.so
 SoundOGG::IsOGGPlaying(SoundOGG*) | shooter.so
 SoundOGG::RampOGGVolume(SoundOGG*, int, int, bool) | shooter.so
 SoundOGG::PlayOGG(char*, unsigned short, int) | shooter.so
-TextUtils::ConvertToMarkup(char const*) | libmerit3d.so
-typeinfo for ExtendedCrashInfo | libmeritbasegame.so
